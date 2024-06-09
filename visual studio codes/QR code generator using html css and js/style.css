@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body{
+    background: #3a86ff;
+}
+
+.container{
+    width: 100%;
+    max-width: 350px;
+    padding: 30px 25px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+
+.container h4{
+    font-weight: 800;
+}
+
+#user-input{
+    width: 100%;
+    margin: 20px 0 25px;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.img-box{
+    display: flex;
+    justify-content: center;
+}
+
+.img-box img{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+.img-box .visible {
+    max-height: 250px;
+    padding: 10px;
+    border: 1px solid rgb(189, 189, 189);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.error{
+    animation: shake .1s 10;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+button{
+    font-size: 13px;
+    width: 100%;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    background-color: #3a86ff;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+}

@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+/* example to understand percentage
+#main{
+    height:50%;
+    width:50%;
+    background:black;
+} */
+
+/* understandin pixels and margin*/
+/* #main{
+    height:100px;
+    width:100px;
+    /* margin: 20px; */
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    /* one more way to write margin */
+    /* margin: 10px 20px 40px 50px; */
+    /* one more way */
+    /*margin: 50px 25px;
+    background-color: red;
+} */
+
+/*padding*/
+/* #main{
+    width: 20%;
+    height: 40%;
+    padding: 20px;
+    background-color:violet;
+} */
+
+/* how to add image */
+/* #main{
+    width: 100%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+    /*background-image: url(https://images.unsplash.com/photo-1575523420630-399fd716f72c?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    /* background-position: top; */
+    /* background-position: bottom; */
+/*}*/
+
+/* position absolute and after giving positon you can move it by 
+usign top bottom left right*/
+/* #car1{
+    height: 100px;
+    width: 120px;
+    background-color:red;
+}
+#car2{
+    position:absolute;
+    left: 40%;
+    height: 80px;
+    width: 140px;
+    background-color:blue;
+}
+#car3{
+    position:absolute;
+    bottom:40%;
+    height: 60px;
+    width: 160px;
+    background-color:chartreuse
+} */
+
+/* now position relative */
+/* #box{
+    position: relative;
+    height: 300px;
+    width:250px;
+    background-color: red;
+}
+#chotabox{
+    position: absolute;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+} */
+
+/* display flex display flex has two proparty for left to right it is justify-content and for up to down align-itmes*/
+#box{
+    display:flex;
+    /* justify-content:start; */
+    justify-content:center;
+    /* justify-content:space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* justify-content:end; */
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    background-color: aquamarine;
+}
+#box1{
+    height:100px;
+    width: 100px;
+    background-color: red;
+}
+#box2{
+    height:80px;
+    width: 100px;
+    background-color:darkblue;
+}
+#box3{
+    height:100px;
+    width: 60px;
+    background-color: blueviolet;
+}

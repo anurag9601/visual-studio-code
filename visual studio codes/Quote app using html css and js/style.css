@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sedan", serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(110deg, #03045e, #00b4d8);
+    margin: 0;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px black;
+    position: absolute;
+}
+
+#title {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+#title::after {
+    content: '';
+    height: 2px;
+    width: 60px;
+    border-radius: 50px;
+    background: #0077b6;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#quote {
+    font-size: 20px;
+    height: 120px;
+}
+
+#quote::before , #quote::after{
+    content: '"'
+}
+
+#author-name {
+    display : block;
+    float: right;
+    font-size: 20px;
+    position: relative;
+}
+
+#author-name::before {
+    content: ''; /* Add content property to make the pseudo-element visible */
+    height: 1px;
+    width: 25px;
+    background: #0077b6;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Use transform to center vertically */
+    right: calc(100% + 10px); /* Position it before the #author-name element */
+}
+
+
+.buttons{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button{
+    border: 0;
+    outline: 0;
+    background-color: #0077b6;
+    padding: 5px 25px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:active{
+    background-color: #00b4d8;
+}
+
+button img{
+    height: 30px;
+    width: 30px;
+}
+
+button:nth-child(2){
+    background: transparent;
+    color: #0077b6;
+    border: 1px solid #0077b6;
+}

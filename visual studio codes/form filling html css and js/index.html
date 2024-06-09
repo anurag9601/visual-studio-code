@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/406377f880.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+          <div class="form-box">
+            <div class="name-box">
+              <lable>Full Name</lable>
+              <input type="text" id = 'name' class= "input-style" placeholder="Enter your name" onkeyup="nameValid()">
+              <span class="name-error"></span>
+            </div>
+            <div class="phone-box">
+              <lable>Phone No</lable>
+              <input type="text" id='phone' class= "input-style" placeholder="phone no" onkeyup="phoneValid()">
+              <span class="phone-error"></span>
+            </div>
+            <div class="email-box">
+              <lable>Enter Mail</lable>
+              <input type="text" id='email' class= "input-style" placeholder="Enter your mail" onkeyup="mailValid()">
+              <span class="email-error"></span>
+            </div>
+            <div class="message-box">
+              <lable>Your Message</lable>
+              <textarea id="message" id='message' placeholder="Your message" onkeyup="messageValid()"></textarea>
+              <span class="message-error" ></span>
+              <div id="sub-btn">
+                <button id ='submit' onclick="submit()">Submit</button>
+              </div>
+            </div>
+            <span class="box-error"></span>
+          </div>
+        </form>
+      </div>
+    <script src="app.js"></script>
+</body>
+</html>
